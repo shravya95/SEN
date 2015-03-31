@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Profile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/mystyle.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+	
+</head>
+
+<body>
+<div class="navbar navbar-inverse navbar-static-top" >
+		
+			<div class="container">
+			
+				<a href="#" class="navbar-brand">Online Academia</a> 						<!-- to write stuff on nav bar -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					
+				</button>
+				
+				<div class ="collapse navbar-collapse navHeaderCollapse">
+					<ul class="nav navbar-nav navbar-right">					<!-- first two for styling and the next one for positioning -->
+						<form class="navbar-form navbar-left" role="search">
+						
+							<div class="search_bar">
+								<input type="text" class="form-control" placeholder="Search">
+								<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+
+							</div>
+						</form>
+						
+						<li><a href="#" class="navbar-brand">Home</a></li>
+						<li><a href="#" class="navbar-brand">Profile</a></li>
+						<li><a href="#" class="navbar-brand">Settings</a></li>
+						<li><a href="#" class="navbar-brand">Logout</a></li>
+						
+					</ul>
+				</div>
+				
+			</div>
+			
+		</div>
+
+
+  </div>
+	<div class="container" style="padding-top: 0px;">
+		<h2 class="page-header">Edit Profile</h2>
+	<div class="row">
+  
+    <!-- left column -->
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="text-center">
+			<img src="images/default_profile_image.png" class="avatar img-circle img-thumbnail" alt="avatar">
+			<h6><i>Change profile picture</i></h6>
+			<input type="file" class="text-center center-block well well-sm">
+      </div>
+      
+    </div>
+	
+  		  <!-- edit form column -->
+	<div id="placeholder" class="col-md-8 col-sm-6 col-xs-12 personal-info" >
+		
+			<div class="col-md-8 col-sm-6 col-xs-12 personal-info" id="replicate_project">
+				<h2>Project</h2>
+					<form class="form-horizontal" role="form" style="padding:10px;">
+	  
+						<div class="form-group" >
+							<label class="col-lg-3 control-label">Title:</label>
+							<div class="col-lg-8">
+								<input class="form-control" placeholder="" type="text">
+							</div>
+						</div>
+						
+						<div class="form-group" >
+							<label class="col-lg-3 control-label">Description:</label>
+							<div class="col-lg-8">
+								<input class="form-control" placeholder="" type="text">
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label class="col-lg-3 control-label">From:</label>
+							<div class="col-lg-4">
+								<input class="form-control" value="" type="month">
+							</div>
+		  
+							<label class="col-lg-1 control-label">To:</label>
+							<div class="col-lg-4">
+								<input class="form-control" value="" type="month">
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label class="col-lg-3 control-label">Status:</label>
+							<div class="col-lg-4">
+								<div class="ui-select">
+									<select id="Status" class="form-control">
+										<option placeholder="">Completed</option>
+										<option placeholder="">Ongoing</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						
+						<div class="form-group" >
+							<label class="col-lg-3 control-label">Guide:</label>
+							<div class="col-lg-8">
+								<input class="form-control" placeholder="" type="text">
+							</div>
+						</div>
+						
+						<div class="form-group" >
+							<label class="col-lg-3 control-label">Associates:</label>
+							<div class="col-lg-8">
+								<input class="form-control" placeholder="Members of Project" type="text">
+							</div>
+						</div>
+						
+						<div class="form-group" >
+							<label class="col-lg-3 control-label">Funding Organisation:</label>
+							<div class="col-lg-8">
+								<input class="form-control" placeholder="" type="text">
+							</div>
+						</div>
+						
+						
+						<div class="form-group">
+							<label class="col-md-3 control-label"></label>
+							<div class="col-md-8">
+								<button type="button" onclick="Add()" class="btn btn btn-primary btn-success btn-sm"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+								<button type="submit" class="btn btn-primary">Save</button>
+								<input class="btn btn-default" value="Cancel" type="reset">
+								
+							</div>
+						</div>
+					</form>
+  
+			</div>
+		
+  </div>
+  
+  </div>
+  </div>
+			<script>
+			document.write();
+		
+			var _counter = 0;
+			function Add() 
+				{
+   		 			_counter++;
+    				var oClone = document.getElementById("replicate_project").cloneNode(true);
+    					oClone.id += (_counter + "");
+   							 document.getElementById("placeholder").appendChild(oClone);
+				}
+	</script>
+</body>
+</html>

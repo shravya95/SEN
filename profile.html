@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Profile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/mystyle.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+	
+</head>
+
+<body>
+<div class="navbar navbar-inverse navbar-static-top" >
+		
+			<div class="container">
+			
+				<a href="#" class="navbar-brand">Online Academia</a> 						<!-- to write stuff on nav bar -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					
+				</button>
+				
+				<div class ="collapse navbar-collapse navHeaderCollapse">
+					<ul class="nav navbar-nav navbar-right">					<!-- first two for styling and the next one for positioning -->
+						<form class="navbar-form navbar-left" role="search">
+						
+							<div class="search_bar">
+								<input type="text" class="form-control" placeholder="Search">
+								<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span</button>
+
+							</div>
+						</form>
+						
+						<li><a href="#" class="navbar-brand">Home</a></li>
+						<li><a href="#" class="navbar-brand">Profile</a></li>
+						<li><a href="#" class="navbar-brand">Settings</a></li>
+						<li><a href="#" class="navbar-brand">Logout</a></li>
+						
+					</ul>
+				</div>
+				
+			</div>
+			
+		</div>
+
+
+
+<div class="container" style="padding-top: 0px;">
+  <h2 class="page-header">Edit Profile</h2>
+  <div class="row">
+  
+    <!-- left column -->
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="text-center">
+			<img src="images/default_profile_image.png" class="avatar img-circle img-thumbnail" alt="avatar">
+			<h6><i>Change profile picture</i></h6>
+			<input type="file" class="text-center center-block well well-sm">
+      </div>
+      
+    </div>
+	
+    <!-- edit form column -->
+    <div class="col-md-8 col-sm-6 col-xs-12 personal-info">
+      <h2>Personal info</h2>
+      <form class="form-horizontal" role="form" style="padding:10px;">
+	  
+        <div class="form-group" >
+          <label class="col-lg-3 control-label">First name:</label>
+          <div class="col-lg-8">
+				<input class="form-control" placeholder="John" type="text">
+          </div>
+        </div>
+		
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Last name:</label>
+          <div class="col-lg-8">
+				<input class="form-control" placeholder="Smith" type="text">
+          </div>
+        </div>
+		
+		<div class="form-group">
+          <label class="col-lg-3 control-label">Nick:</label>
+          <div class="col-lg-8">
+            <input class="form-control" placeholder="Profile Name" type="text">
+          </div>
+        </div>
+		
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Webmail ID:</label>
+          <div class="col-lg-8">
+				<input class="form-control" placeholder="9 digits" type="text">
+          </div>
+        </div>
+		
+		 <div class="form-group">
+          <label class="col-lg-3 control-label">Stream:</label>
+          <div class="col-lg-6">
+				<div class="ui-select">
+					<select id="stream" class="form-control">
+						<option placeholder=>B.Tech.(ICT)</option>
+						<option placeholder=>B.Tech.(Honors)</option>
+						<option placeholder=>M.Tech.(ICT)</option>
+						<option placeholder=>M.Sc.(IT)</option>
+						<option placeholder=>M.Des.(Communication Design)</option>
+						<option placeholder=>M.Sc.(ICT in Agriculture and Rural Development)</option>
+					
+					</select>
+				</div>
+          </div>
+        </div>
+		
+		 <div class="form-group">
+          <label class="col-lg-3 control-label">Year of Joining:</label>
+          <div class="col-lg-2">
+				<input class="form-control" placeholder="20xx" type="number">
+          </div>
+        </div>
+	
+		 <div class="form-group">
+          <label class="col-lg-3 control-label">Area of Interests:</label>
+          <div class="col-lg-8">
+				<input class="form-control" placeholder="Neural Networks,Victorian Literature,Graph Theory" type="text">
+          </div>
+        </div>
+		
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Alternate Email:</label>
+          <div class="col-lg-8">
+            <input class="form-control" placeholder="abc@abc.com" type="email">
+          </div>
+        </div>
+		
+		
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Contact Number:</label>
+          <div class="col-lg-8">
+            <input class="form-control" placeholder="10 digits" type="tel">
+          </div>
+        </div>
+		
+		
+		<h4>Alma Matter</h4>
+			<div class="form-group">
+				<label class="col-lg-3 control-label">High School</label>
+				<div class="col-lg-7">
+					<input class="form-control"  type="text">
+				</div>
+				<div class="col-lg-2">
+					<input class="form-control"  placeholder="year" type="year">
+				</div>
+				
+				<label class="col-lg-3 control-label">UG Institute</label>
+				<div class="col-lg-7">
+					<input class="form-control"  type="text">
+				</div>
+				<div class="col-lg-2">
+					<input class="form-control"  placeholder="year" type="year">
+				</div>
+				
+			</div>
+		
+		
+        <div class="form-group">
+          <label class="col-md-3 control-label"></label>
+          <div class="col-md-8">
+            <input class="btn btn-primary" value="Save and Continue" type="button">
+            <span></span>
+            <input class="btn btn-default" value="Cancel" type="reset">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

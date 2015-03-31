@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome to Academia!</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+
+
+	<body>
+
+		<div class="body"></div>
+
+		<div class="grad"></div>
+		
+		<div class="header">
+			<div>Welcome to<span> Academia!</span></div>
+		</div>
+		
+		<br>
+		
+		<div class="login">
+				<input type="text" placeholder="Webmail ID" name="user"><br>
+				<input type="password" placeholder="Password" name="password"><br>
+				<input type="button" value="Login" >
+				<input type="button" value="Signup!" data-toggle="modal" data-target="#sm">
+				<a href="#"><p data-toggle="modal" data-target="#sm">Forgot Password</p></a>
+		</div>
+
+		<div class = "modal fade" id="sm" role="dialog">
+				<div class = "modal-dialog">
+					<div class = "modal-content">
+						<form class="form-horizontal">
+							<div class="modal-body">
+								<div class="form-group">
+									<div>
+										<input type="email" class="form-control" id="w-id" placeholder="Enter Webmial ID">
+									</div>
+								</div>
+							</div>
+						
+							<div class="modal-footer">
+								<a class = "btn btn-default" data-dismiss = "modal">Close</a>
+								<a class = "btn btn-primary" type="submit">Submit</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+				
+  
+		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+     	
+	</body>
+
+	
+</html>

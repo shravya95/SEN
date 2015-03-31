@@ -1,0 +1,42 @@
+div.navbar
+{
+	background-color:#253640; 
+	color:white; 
+	padding:0px 0px 0px 0px; 
+	font-family:georgia,cambria;
+	margin:0px 
+	
+}
+body
+{
+	 background-color:#FFFFF0;
+}
+div.li {
+	color:white;
+}
+
+.navbar.navbar-inverse.navbar-static-top a {
+	color:white;
+	font-size: 18px;
+}
+
+.navbar.navbar-inverse.navbar-static-top a:hover {
+	color:grey;
+}
+
+.navbar.navbar-inverse.navbar-static-top a:active {
+	color:grey;
+}
+
+
+.nav.navbar-nav.navbar-right li a{
+	color: #fff0fd;
+	font-family:georgia,cambria;
+	font-size: 14px;
+}
+
+
+.search_ bar{
+	position:relative;
+	left: calc(-225%);
+}
